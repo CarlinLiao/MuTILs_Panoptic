@@ -1,0 +1,26 @@
+name: mutils
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools
+  - gdal
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch-cuda=12.1
+  - scikit-learn
+  - scikit-image
+  - pip:
+    - histomicstk --find-links https://girder.github.io/large_image_wheels
+  # Development requirements
+  - autopep8
+  - pylint
